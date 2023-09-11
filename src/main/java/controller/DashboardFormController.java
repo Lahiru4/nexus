@@ -5,9 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,12 +14,14 @@ import java.util.ResourceBundle;
 public class DashboardFormController implements Initializable {
     public AnchorPane lode_page;
     public JFXButton dashboardBtn;
+    public JFXButton employeeBtn;
+    public JFXButton manageInstrumentBtn;
+    public JFXButton center_Wise_Data;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        dashboardBtn.getStyleClass().remove("defolt_button");
-        dashboardBtn.getStyleClass().add("select_button");
-        Node node= null;
+        selectCss(dashboardBtn);
+        Node node = null;
         try {
             node = FXMLLoader.load(getClass().getResource("/viwe/homePage.fxml"));
         } catch (IOException e) {
@@ -31,23 +31,48 @@ public class DashboardFormController implements Initializable {
         lode_page.getChildren().add(node);
     }
 
+    private void selectCss(JFXButton dashboardBtn) {
+        //remo
+        this.dashboardBtn.getStyleClass().remove("select_button");
+        this.employeeBtn.getStyleClass().remove("select_button");
+        this.manageInstrumentBtn.getStyleClass().remove("select_button");
+        this.center_Wise_Data.getStyleClass().remove("select_button");
+
+
+        //add
+        this.employeeBtn.getStyleClass().add("default_button");
+        this.dashboardBtn.getStyleClass().add("default_button");
+        this.manageInstrumentBtn.getStyleClass().add("default_button");
+        this.center_Wise_Data.getStyleClass().add("default_button");
+
+        //select
+        dashboardBtn.getStyleClass().remove("default_button");
+        dashboardBtn.getStyleClass().add("select_button");
+
+
+    }
+
     public void btnDashbordOnAction(ActionEvent actionEvent) throws IOException {
-        Node node= FXMLLoader.load(getClass().getResource("/viwe/homePage.fxml"));
+        selectCss(dashboardBtn);
+        Node node = FXMLLoader.load(getClass().getResource("/viwe/homePage.fxml"));
         lode_page.getChildren().clear();
         lode_page.getChildren().add(node);
     }
 
     public void btnMangeEmployeeOnAction(ActionEvent actionEvent) throws IOException {
-        Node node= FXMLLoader.load(getClass().getResource("/viwe/employeedetails_form.fxml"));
+        selectCss(employeeBtn);
+        Node node = FXMLLoader.load(getClass().getResource("/viwe/employeedetails_form.fxml"));
         lode_page.getChildren().clear();
         lode_page.getChildren().add(node);
     }
 
     public void btnMangeInstrumentOnAction(ActionEvent actionEvent) {
+        selectCss(manageInstrumentBtn);
 
     }
 
     public void btnCenterWiseDataOnAction(ActionEvent actionEvent) {
+        selectCss(center_Wise_Data);
 
     }
 

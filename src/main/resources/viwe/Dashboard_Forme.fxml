@@ -52,7 +52,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="27.0" layoutY="492.0" onAction="#btnMangeEmployeeOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Manage Employees" textFill="#777777">
+      <JFXButton fx:id="employeeBtn" layoutX="27.0" layoutY="492.0" onAction="#btnMangeEmployeeOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Manage Employees" textFill="#777777">
          <font>
             <Font size="27.0" />
          </font>
@@ -60,7 +60,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="29.0" layoutY="605.0" onAction="#btnMangeInstrumentOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Manage Instrument" textFill="#777777">
+      <JFXButton fx:id="manageInstrumentBtn" layoutX="29.0" layoutY="605.0" onAction="#btnMangeInstrumentOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Manage Instrument" textFill="#777777">
          <font>
             <Font size="27.0" />
          </font>
@@ -68,7 +68,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="28.0" layoutY="717.0" onAction="#btnCenterWiseDataOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Center Wise Data" textFill="#777777">
+      <JFXButton fx:id="center_Wise_Data" layoutX="28.0" layoutY="717.0" onAction="#btnCenterWiseDataOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Center Wise Data" textFill="#777777">
          <font>
             <Font size="27.0" />
          </font>
