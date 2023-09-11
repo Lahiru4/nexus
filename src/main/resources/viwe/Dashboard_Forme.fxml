@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1920.0" stylesheets="@style/dashboard_btn.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="1011.0" prefWidth="365.0" style="-fx-background-color: #244042;">
+         <children>
+            <ImageView fitHeight="198.0" fitWidth="198.0" layoutX="79.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Group%2057.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUserName" layoutX="96.0" layoutY="245.0" text="Shenan Vindinu" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUserEmail" layoutX="52.0" layoutY="279.0" text="shenan256@gmail.com" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="861.0" onAction="#btnMyProfileOnAction" prefHeight="91.0" prefWidth="281.0" style="-fx-background-radius: 100; -fx-background-color: #244042;" text=" " textFill="#777777">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Group%2093.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="dashboardBtn" layoutX="25.0" layoutY="377.0" onAction="#btnDashbordOnAction" prefHeight="91.0" prefWidth="375.0" text="Dashboard" textFill="#777777">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="27.0" layoutY="492.0" onAction="#btnMangeEmployeeOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Manage Employees" textFill="#777777">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="29.0" layoutY="605.0" onAction="#btnMangeInstrumentOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Manage Instrument" textFill="#777777">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="28.0" layoutY="717.0" onAction="#btnCenterWiseDataOnAction" prefHeight="91.0" prefWidth="375.0" styleClass="defolt_button" text="Center Wise Data" textFill="#777777">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane fx:id="lode_page" layoutX="365.0" layoutY="1.0" prefHeight="1007.0" prefWidth="1554.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

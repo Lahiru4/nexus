@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1000.0" prefWidth="1542.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <children>
+      <Label layoutX="69.0" layoutY="34.0" text="Todays Overview">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="108.0" layoutY="119.0" prefHeight="152.0" prefWidth="371.0" style="-fx-background-color: #2C2F48; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="72.0" layoutY="23.0" text="Wind Speed" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="92.0" text="12km/h" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="30.0" layoutX="231.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-up-arrow-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-wind-100%201.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="274.0" layoutY="63.0" text="12km/h" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="599.0" layoutY="119.0" prefHeight="152.0" prefWidth="371.0" style="-fx-background-color: #2C2F48; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="72.0" layoutY="23.0" text="Temperature" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="92.0" text="12km/h" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="30.0" layoutX="231.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-up-arrow-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="21.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-thermometer-100%201.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="274.0" layoutY="63.0" text="5°C" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="65.0" fitWidth="62.0" layoutX="1218.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="108.0" layoutY="322.0" prefHeight="152.0" prefWidth="371.0" style="-fx-background-color: #2C2F48; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="72.0" layoutY="23.0" text="Rainfall" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="92.0" text="18mm" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="30.0" layoutX="231.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-up-arrow-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-rain-100-2%201.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="278.0" layoutY="63.0" text="3mm" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1072.0" layoutY="119.0" prefHeight="152.0" prefWidth="371.0" style="-fx-background-color: #2C2F48; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="72.0" layoutY="23.0" text="Pressure" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="92.0" text="1011hPa" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="30.0" layoutX="231.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-up-arrow-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-atmospheric-pressure-100-2%201.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="285.0" layoutY="63.0" text="10hpa" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1072.0" layoutY="322.0" prefHeight="152.0" prefWidth="371.0" style="-fx-background-color: #2C2F48; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="72.0" layoutY="23.0" text="Humidity" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="92.0" text="12km/h" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="30.0" layoutX="242.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-up-arrow-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-humidity-100-2%201.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="285.0" layoutY="63.0" text="12km/h" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="599.0" layoutY="322.0" prefHeight="152.0" prefWidth="371.0" style="-fx-background-color: #2C2F48; -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="72.0" layoutY="23.0" text="Evaporation" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="92.0" text="12km/h" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="30.0" layoutX="221.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-up-arrow-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-humidity-100-2%201.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="285.0" layoutY="63.0" text="12km/h" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1072.0" layoutY="561.0" prefHeight="361.0" prefWidth="371.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#dacece" />
+         </effect>
+         <children>
+            <Label layoutX="34.0" layoutY="22.0" text="Invite to office meet-up">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="34.0" layoutY="70.0" text="12km/h" textFill="#a1a1a1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="264.0" layoutY="317.0" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: green; -fx-border-radius: 20; -fx-background-radius: 20;" text="Send">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="304.0" layoutY="24.0" text="mail" textFill="#a1a1a1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="65.0" layoutX="194.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-delete-48.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="65.0" layoutX="117.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8-edit.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="1317.0" layoutY="50.0" text="WeatherBug">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <BarChart layoutX="108.0" layoutY="539.0" prefHeight="412.0" prefWidth="799.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="1017.0" layoutY="36.0" text="12 : 24">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
