@@ -10,9 +10,11 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import model.EmplyeeModel;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class EmployeePageController implements Initializable {
@@ -31,6 +33,7 @@ public class EmployeePageController implements Initializable {
 
     @FXML
     private TableColumn<?, ?> email;
+    private EmplyeeModel emplyeeModel=new EmplyeeModel();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -40,6 +43,7 @@ public class EmployeePageController implements Initializable {
         address.setCellValueFactory(new PropertyValueFactory<>("address"));
         email.setCellValueFactory(new PropertyValueFactory<>("email"));
 
+        setTableData();
     }
 
     public void addOnAction(ActionEvent actionEvent) throws IOException {
@@ -51,8 +55,14 @@ public class EmployeePageController implements Initializable {
         stage.centerOnScreen();
         stage.show();
     }
-    public void setTableData(EmployDTO employDTO){
-        emp.getItems().add(employDTO);
+    public void setTableData(){
+        List<EmployDTO> all = emplyeeModel.getAll();
+        emp.getItems().clear();
         emp.refresh();
+        for (EmployDTO dto : all) {
+            emp.getItems().add(dto);
+        }
+
+
     }
 }
