@@ -24,11 +24,6 @@ public class LoginFromController implements Initializable {
 
 
     public void loginOnAction(ActionEvent actionEvent) throws IOException {
-       /* page.getChildren().clear();
-        Stage stage = (Stage) page.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/viwe/Dashboard_Forme.fxml"));
-        stage.setScene(new Scene(fxmlLoader.load()));
-        stage.centerOnScreen();*/
         page.getScene().getWindow().hide();
         Stage stage = new Stage();
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/viwe/Dashboard_Forme.fxml"))));
@@ -40,7 +35,12 @@ public class LoginFromController implements Initializable {
 
     }
 
-    public void registerOnAction(MouseEvent mouseEvent) {
 
+    public void registerOnAction(MouseEvent mouseEvent) throws IOException {
+        page.getScene().getWindow().hide();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/viwe/register_from.fxml"))));
+        stage.centerOnScreen();
+        stage.show();
     }
 }

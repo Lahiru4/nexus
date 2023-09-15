@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InstrumentDetailsFxmlController">
+   <children>
+      <Text layoutX="579.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instrument Details" textAlignment="CENTER" wrappingWidth="363.39617919921875">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField layoutX="230.0" layoutY="146.0" prefHeight="74.0" prefWidth="616.0" style="-fx-background-radius: 12px;" />
+      <TextField layoutX="231.0" layoutY="264.0" prefHeight="74.0" prefWidth="616.0" style="-fx-background-radius: 12px;" />
+      <TextField layoutX="234.0" layoutY="378.0" prefHeight="71.0" prefWidth="280.0" style="-fx-background-radius: 12px;" />
+      <ImageView fitHeight="519.0" fitWidth="420.0" layoutX="1011.0" layoutY="183.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@image/Rectangle%2041.png" />
+         </image>
+      </ImageView>
+      <Button graphicTextGap="2.0" layoutX="447.0" layoutY="780.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="170.0" style="-fx-background-color: #1D203E; -fx-background-radius: 20;" text="Add" textFill="#f2e2e2">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="633.0" layoutY="781.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="170.0" style="-fx-background-color: #1D203E; -fx-background-radius: 20;" text="Update" textFill="#fff8f8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="816.0" layoutY="782.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="170.0" style="-fx-background-color: #1D203E; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="1000.0" layoutY="783.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="170.0" style="-fx-background-color: #1D203E; -fx-background-radius: 20;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <TextField layoutX="235.0" layoutY="518.0" prefHeight="173.0" prefWidth="609.0" style="-fx-background-radius: 12px;" />
+      <ComboBox layoutX="562.0" layoutY="378.0" prefHeight="71.0" prefWidth="280.0" style="-fx-background-radius: 12; -fx-background-color: white;" />
+      <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="1353.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1410.0" layoutY="9.0" prefHeight="32.0" prefWidth="118.0" text="WeatherBug">
+         <font>
+            <Font name="Padauk Book Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

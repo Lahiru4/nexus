@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1542.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeePageController">
+   <children>
+      <TableView fx:id="emp" layoutX="102.0" layoutY="192.0" prefHeight="669.0" prefWidth="1366.0" stylesheets="@style/Table.css">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="168.0" text="Employee Id" />
+          <TableColumn fx:id="tele" prefWidth="250.0" text="Tele" />
+            <TableColumn fx:id="name" prefWidth="241.0" text="Name" />
+            <TableColumn fx:id="address" prefWidth="259.0" text="Address" />
+            <TableColumn fx:id="email" prefWidth="431.0" text="Email" />
+        </columns>
+      </TableView>
+      <Label layoutX="650.0" layoutY="42.0" text="Employee Details">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField layoutX="102.0" layoutY="119.0" prefHeight="45.0" prefWidth="448.0" promptText="Search" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="59.0" fitWidth="95.0" layoutX="1308.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/PngItem_SUN%201.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="971.0" layoutY="927.0" onAction="#addOnAction" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: #1D203E; -fx-background-radius: 15;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1103.0" layoutY="927.0" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: #1D203E; -fx-background-radius: 15;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1241.0" layoutY="927.0" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: #1D203E; -fx-background-radius: 15;" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1375.0" layoutY="927.0" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: #1D203E; -fx-background-radius: 15;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

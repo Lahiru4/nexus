@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style/profile_data_button.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileDetailFormController">
+    <children>
+        <Text layoutX="630.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Details" wrappingWidth="223.1787109375">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Text>
+        <Text layoutX="73.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField layoutX="73.0" layoutY="212.0" prefHeight="60.0" prefWidth="848.0" style="-fx-border-color: gray; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Text layoutX="73.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField layoutX="73.0" layoutY="353.0" prefHeight="60.0" prefWidth="345.0" style="-fx-border-color: gray; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Text layoutX="579.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField layoutX="579.0" layoutY="353.0" prefHeight="60.0" prefWidth="345.0" style="-fx-border-color: gray; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Text layoutX="73.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField layoutX="73.0" layoutY="492.0" prefHeight="60.0" prefWidth="848.0" style="-fx-border-color: gray; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Text layoutX="73.0" layoutY="627.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField layoutX="73.0" layoutY="638.0" prefHeight="60.0" prefWidth="345.0" style="-fx-border-color: gray; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Text layoutX="73.0" layoutY="763.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField layoutX="73.0" layoutY="774.0" prefHeight="60.0" prefWidth="345.0" style="-fx-border-color: gray; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Text layoutX="576.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <TextField layoutX="576.0" layoutY="633.0" prefHeight="60.0" prefWidth="345.0" style="-fx-border-color: gray; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <JFXButton buttonType="RAISED" layoutX="818.0" layoutY="879.0" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #BFC0C9; -fx-background-radius: 15;" text="Edit" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </JFXButton>
+        <AnchorPane layoutX="1096.0" prefHeight="1000.0" prefWidth="444.0" style="-fx-background-color: #244042;" stylesheets="@profile_data_button.css">
+         <children>
+            <ImageView fitHeight="288.0" fitWidth="267.0" layoutX="106.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Group%2057.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="106.0" layoutY="578.0" prefHeight="44.0" prefWidth="267.0" style="-fx-background-color: #1D203E; -fx-background-radius: 15;" text="Change Profile Picture" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <AnchorPane layoutX="128.0" layoutY="44.0" prefHeight="77.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="47.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/PngItem_SUN%201.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="88.0" layoutY="25.0" text="WeatherBug">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="182.0" layoutY="658.0" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #E74C2A; -fx-background-radius: 20;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="178.0" layoutY="930.0" onMouseClicked="#aboutOnAction" text="About Software" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fitHeight="60.0" fitWidth="71.0" layoutX="43.0" layoutY="35.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/backbtn.png" />
+         </image>
+      </ImageView>
+    </children>
+
+</AnchorPane>
